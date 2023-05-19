@@ -35,13 +35,13 @@ const keys = [
   {
     color: "white",
     name: "a",
-    sound: require("../sounds/A4.mp3"),
+    sound: require("../sounds/A3.mp3"),
   },
   { color: "black", name: "" },
   {
     color: "white",
     name: "b",
-    sound: require("../sounds/B4.mp3"),
+    sound: require("../sounds/B3.mp3"),
   },
   {
     color: "white",
