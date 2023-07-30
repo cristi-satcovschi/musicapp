@@ -8,9 +8,24 @@ export const sidebarItems: { name: string; items: Item[] }[] = [
   {
     name: "Meniu",
     items: [
+      // {
+      //   name: "Dashboard",
+      //   slug: "/",
+      //   description: "",
+      // },
       {
-        name: "Dashboard",
-        slug: "/dashboard",
+        name: "Songs",
+        slug: "/songs",
+        description: "",
+      },
+      {
+        name: "Synths",
+        slug: "/synths",
+        description: "",
+      },
+      {
+        name: "Tests",
+        slug: "/tests",
         description: "",
       },
     ],

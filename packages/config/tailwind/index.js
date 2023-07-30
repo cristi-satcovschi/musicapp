@@ -3,7 +3,9 @@ const config = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {},
-    colors: {},
+    // colors: {
+    //   background: "#E0E5EC",
+    // },
   },
   plugins: [],
 };

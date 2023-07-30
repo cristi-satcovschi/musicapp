@@ -6,14 +6,20 @@ import { StatusBar } from "expo-status-bar";
 
 import { TRPCProvider } from "../utils/api";
 
-const instruments = ["pian", "tobe"];
+const instruments = [
+  { id: 0, name: "pian" },
+  { id: 1, name: "tobe" },
+];
 
 const Synths = () => {
   return (
     <View className="flex flex-col items-center space-y-4 py-4">
       {instruments.map((instrument) => (
-        <View className="bg-slate-100 border-slate-300 h-24 w-24 rounded-xl border-2 p-4">
-          <Text>{instrument}</Text>
+        <View
+          key={instrument.id}
+          className="bg-slate-100 border-slate-300 h-24 w-24 rounded-xl border-2 p-4"
+        >
+          <Text>{instrument.name}</Text>
         </View>
       ))}
     </View>

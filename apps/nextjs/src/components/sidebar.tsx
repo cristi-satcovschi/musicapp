@@ -2,8 +2,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { sidebarItems } from "~/lib/sidebarItems";
-import PageSection from "./pageSection";
-import PageSectionContent from "./pageSectionContent";
 
 const SidebarItem = ({ item }) => {
   const router = useRouter();
@@ -11,7 +9,7 @@ const SidebarItem = ({ item }) => {
   return (
     <Link
       href={`${item.slug}`}
-      className={`block rounded-xl px-4 py-3 text-sm font-semibold ${
+      className={`shadow-neumorphic block rounded-xl px-4 py-3 text-sm font-semibold ${
         router.pathname.includes(item.slug)
           ? "bg-slate-300 text-slate-950"
           : "bg-slate-200 hover:bg-slate-300 hover:text-gray-800"
@@ -29,10 +27,10 @@ const Sidebar = () => {
   return (
     <nav className="px-8 py-8">
       <div className="flex flex-row items-center">
-        <div className="bg-slate-300 text-gray-700 flex h-12 w-12 items-center justify-center rounded-xl font-bold">
-          App
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-slate-300 font-bold text-gray-700">
+          Mus
         </div>
-        <h2 className="ml-4 text-4xl">App Title</h2>
+        <h2 className="ml-4 text-3xl">Music App</h2>
       </div>
       <div className="mt-16 space-y-3">
         {items.map((item) => (
